@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Validacion de contraseña y usuario</title>
+	<link rel="stylesheet" href="codigos/css/estilos.css">
+
+	<script>
+		function comprobarClave() {
+			clave1 = document.f1.clave1.value
+			clave2 = document.f1.clave2.value
+
+			if (clave1 == "therod" && clave2 == "rod123456"){
+				alert("Los Datos Coinciden...\n Bienvenido");
+					var href = "codigos/html/principal.html";
+					window.location=href;}
+
+			else{ 
+				alert("Error...\nIntentelo Nuevamente");
+					var href = "index.html";
+					window.location=href;
+			};	
+		}
+	</script>
+</head>
+
+<body>
+	<br>
+	<h1>Ingrese Usuario y Contraseña</h1>
+
+	<br>
+	<form action="" name="f1">
+	<center>
+		<hr color="blue">
+		<br>
+		<table>
+		<tr>
+			<td align="center">Usuario: <input type="Password" name="clave1" size="20">
+		<br><br>
+			</td>
+		</tr>
+		<tr>
+			<td align="center">Contraseña: <input type="Password" name="clave2" size="20">
+		<br><br>
+			</td>
+</tr>	
+		<tr>	
+			<td align="center"><input type="button" value="Ingresar" onclick="comprobarClave()"></td>
+		</tr>
+	</table>
+	<br>
+	</center>
+	<hr color = "blue"> 	
+	</form>
+	<h1>Presionar Boton de Ingresar</h1>
+
+<center>
+	<img src = "\proyectos1\codigos\imagenes\Flork Memes 😎_.png"><br>
+</center>
+</body>
+</html>
